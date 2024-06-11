@@ -58,6 +58,10 @@ function AddNewInterview() {
         });
 
       console.log("Inserted ID", resp);
+
+      if (resp) {
+        setOpenDialog(false);
+      }
     } else {
       console.error("ERROR MESSAGE");
     }
