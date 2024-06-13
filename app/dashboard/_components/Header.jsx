@@ -3,12 +3,22 @@
 import { cn } from "@/lib/utils";
 import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 function Header() {
   const path = usePathname();
   return (
     <div className="flex items-center justify-between p-4 bg-secondary shadow-sm">
-      <Image src="/logo.svg" width={160} height={100} alt="Logo" priority />
+      <Link href="/">
+        <Image
+          style={{ width: "160px", height: "auto" }}
+          src="/logo.svg"
+          width={0}
+          height={0}
+          alt="Logo"
+          priority
+        />
+      </Link>
       <ul className="hidden md:flex gap-6">
         <li
           className={cn(
