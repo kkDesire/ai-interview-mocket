@@ -5,7 +5,7 @@ function Pricing() {
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
       <div className="flex flex-col justify-center items-center mb-5">
         <h2 className="text-2xl font-black text-gray-900 sm:text-3xl">
-          Pricing
+          Upgrade
         </h2>
         <h2 className="text-sm font-bold text-gray-500">
           Upgrade to monthly plan to access unlimited mock interviews
