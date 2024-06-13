@@ -38,7 +38,7 @@ function Header() {
             }
           )}
         >
-          Questions
+          <Link href="/dashboard/questions">Questions</Link>
         </li>
         <li
           className={cn(
@@ -48,7 +48,7 @@ function Header() {
             }
           )}
         >
-          Upgrade
+          <Link href="/dashboard/pricing">Upgrade</Link>
         </li>
         <li
           className={cn(
