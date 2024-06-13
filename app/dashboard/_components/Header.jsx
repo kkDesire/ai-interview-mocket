@@ -28,7 +28,7 @@ function Header() {
             }
           )}
         >
-          Dashboard
+          <Link href={"/dashboard"}>Dashboard</Link>
         </li>
         <li
           className={cn(

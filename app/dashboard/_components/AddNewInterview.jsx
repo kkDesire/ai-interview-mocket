@@ -28,6 +28,8 @@ function AddNewInterview() {
   const [jsonResponse, setJsonResponse] = useState();
 
   const { user } = useUser();
+  const router = useRouter();
+
   const onSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -38,11 +40,7 @@ function AddNewInterview() {
       .text()
       .replace("```json", "")
       .replace("```", "");
-
-    const router = useRouter();
-
     setJsonResponse(MockJsonResp);
-    console.log(JSON.parse(MockJsonResp));
     if (MockJsonResp) {
       const resp = await db
         .insert(MockInterview)

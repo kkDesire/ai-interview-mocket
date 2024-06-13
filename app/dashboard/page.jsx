@@ -1,4 +1,5 @@
 import AddNewInterview from "./_components/AddNewInterview";
+import InterviewList from "./_components/InterviewList";
 
 function Dashboard({ children }) {
   return (
@@ -10,6 +11,8 @@ function Dashboard({ children }) {
       <div className="grid grid-cols-1 md:grid-cols-3 my-5">
         <AddNewInterview />
       </div>
+      {/* Preview Interview List */}
+      <InterviewList />
     </div>
   );
 }
