@@ -1,6 +1,6 @@
 import planData from "@/utils/planData";
 import PriceCard from "../_components/PriceCard";
-function Pricing() {
+function Upgrade() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
       <div className="flex flex-col justify-center items-center mb-5">
@@ -22,4 +22,4 @@ function Pricing() {
   );
 }
 
-export default Pricing;
+export default Upgrade;

@@ -34,7 +34,7 @@ function Header() {
           className={cn(
             "hover:text-primary hover:font-bold transition-all cursor-pointer",
             {
-              "text-primary font-bold": path === "/questions",
+              "text-primary font-bold": path === "/dashboard/questions",
             }
           )}
         >
@@ -44,11 +44,11 @@ function Header() {
           className={cn(
             "hover:text-primary hover:font-bold transition-all cursor-pointer",
             {
-              "text-primary font-bold": path === "/upgrade",
+              "text-primary font-bold": path === "/dashboard/upgrade",
             }
           )}
         >
-          <Link href="/dashboard/pricing">Upgrade</Link>
+          <Link href="/dashboard/upgrade">Upgrade</Link>
         </li>
         <li
           className={cn(
